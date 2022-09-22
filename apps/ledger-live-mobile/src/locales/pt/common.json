@@ -1035,6 +1035,8 @@
     "stepLanguage" : {
       "title" : "Selecione seu idioma",
       "cta" : "Continuar",
+      "changeDeviceLanguage" : "Alterar o idioma do seu dispositivo?",
+      "changeDeviceLanguageDescription" : "O Ledger Live agora está em {{language}}. Você quer usar {{language}} no seu dispositivo também?",
       "warning" : {
         "title" : "Começar em inglês",
         "cta" : "Entendi!",
@@ -1725,7 +1727,13 @@
       "WITHDRAW_UNBONDED" : "Saque",
       "NOMINATE" : "Nomeação",
       "CHILL" : "Limpar Nomeações",
-      "SET_CONTROLLER" : "Definir controlador"
+      "SET_CONTROLLER" : "Definir controlador",
+      "ACTIVATE" : "Ativado",
+      "LOCK" : "Bloqueado",
+      "UNLOCK" : "Desbloqueado",
+      "REVOKE" : "Revogado",
+      "REGISTER" : "Registrado",
+      "WITHDRAW" : "Sacado"
     }
   },
   "operationDetails" : {
@@ -1963,6 +1971,16 @@
       "noTransaction" : {
         "title" : "Você não tem nenhuma transação",
         "subtitle" : "Você precisará de um dispositivo para poder comprar ou receber {{assetName}}"
+      }
+    },
+    "banner" : {
+      "redelegation" : {
+        "description" : "Caso você não saiba, o validador Ledger faz staking por uma comissão menor do que o validador que você está utilizando.",
+        "cta" : "Redelegar"
+      },
+      "delegation" : {
+        "description" : "Caso você não saiba, o validador Ledger faz staking de seu {{asset}} por uma comissão menor.",
+        "cta" : "Aplicar agora"
       }
     }
   },
@@ -3493,6 +3511,10 @@
     "changeLanguage" : "Mudar Idioma",
     "allowLanguageInstallation" : "Permitir instalação do idioma",
     "languageInstalled" : "O idioma do dispositivo mudou para {{language}}.",
+    "firmwareUpdatePrompt" : {
+      "title" : "Colocar sua {{deviceName}} em {{language}}?",
+      "description" : "{{language}} agora está disponível para sua {{deviceName}}. Você pode configurar agora ou mudar o idioma do seu dispositivo a qualquer momento no My Ledger."
+    },
     "installingLanguage" : "Instalando Idioma",
     "languages" : {
       "english" : "Inglês",
@@ -4291,6 +4313,7 @@
     "delegation" : "Delegação",
     "viewDetails" : "Ver Detalhes",
     "validator" : "Validador",
+    "validatorGroup" : "Grupo de validadores",
     "validatorAddress" : "Endereço do validador",
     "delegatedAccount" : "Conta Delegada",
     "duration" : "Duração",
